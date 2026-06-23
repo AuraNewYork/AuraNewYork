@@ -1,0 +1,80 @@
+.list {
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.headerRow, .row {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1.2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.7fr;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  align-items: center;
+  font-size: 0.78rem;
+}
+
+.headerRow {
+  background: var(--aura-gray-100);
+  font-weight: 600;
+  color: var(--aura-gray-600);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.row {
+  border-top: 1px solid var(--aura-gray-100);
+  transition: background var(--transition-fast);
+}
+
+.row:hover {
+  background: var(--aura-lavender-light);
+}
+
+.colPrice {
+  font-weight: 600;
+  color: var(--aura-near-black);
+}
+
+.colBuilding {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--aura-gray-600);
+}
+
+.colLayout {
+  font-weight: 500;
+}
+
+.colUnit, .colSqft, .colExposure, .colTerm {
+  color: var(--aura-gray-500);
+}
+
+.tag {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: var(--radius-sm);
+}
+
+.tagValue {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.tagPremium {
+  background: var(--aura-lavender-light);
+  color: var(--aura-purple);
+}
+
+@media (max-width: 768px) {
+  .headerRow, .row {
+    grid-template-columns: 1fr 0.6fr 1fr 0.5fr;
+    font-size: 0.72rem;
+  }
+
+  .colSqft, .colExposure, .colTerm, .colTag {
+    display: none;
+  }
+}

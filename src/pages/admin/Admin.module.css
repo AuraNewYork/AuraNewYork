@@ -1,0 +1,228 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--aura-gray-100);
+  padding: var(--space-6);
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--space-10);
+  background: var(--aura-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.loginLogo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--aura-near-black);
+}
+
+.logoDivider {
+  width: 1px;
+  height: 16px;
+  background: var(--aura-gray-300);
+}
+
+.logoSub {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--aura-gray-500);
+}
+
+.loginTitle {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.loginSub {
+  font-size: 0.85rem;
+  color: var(--aura-gray-500);
+  margin-bottom: var(--space-6);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.loginInput {
+  width: 100%;
+  padding: var(--space-4);
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.loginInput:focus {
+  border-color: var(--aura-purple);
+}
+
+.loginError {
+  font-size: 0.8rem;
+  color: #dc2626;
+  text-align: left;
+}
+
+.loginBtn {
+  padding: var(--space-4);
+  background: var(--aura-purple);
+  color: var(--aura-white);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background var(--transition-fast);
+}
+
+.loginBtn:hover:not(:disabled) {
+  background: var(--aura-purple-light);
+}
+
+.loginBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Admin layout */
+.admin {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--aura-near-black);
+  color: var(--aura-gray-300);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--aura-gray-700);
+}
+
+.sidebarHeader .logoText {
+  color: var(--aura-white);
+}
+
+.badge {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  background: var(--aura-purple);
+  color: var(--aura-white);
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--aura-gray-400);
+  transition: all var(--transition-fast);
+}
+
+.navItem:hover {
+  color: var(--aura-white);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.navActive {
+  color: var(--aura-white);
+  background: var(--aura-purple);
+}
+
+.navActive:hover {
+  background: var(--aura-purple);
+}
+
+.sidebarFooter {
+  border-top: 1px solid var(--aura-gray-700);
+  padding-top: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.userName {
+  font-size: 0.8rem;
+  color: var(--aura-gray-400);
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.8rem;
+  color: var(--aura-gray-500);
+  transition: color var(--transition-fast);
+}
+
+.logoutBtn:hover {
+  color: var(--aura-white);
+}
+
+.content {
+  padding: var(--space-8);
+  background: var(--aura-gray-100);
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .admin {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    height: auto;
+    padding: var(--space-4);
+  }
+
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

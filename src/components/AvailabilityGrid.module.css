@@ -1,0 +1,114 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+
+.card {
+  position: relative;
+  padding: var(--space-5);
+  background: var(--aura-white);
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--aura-purple-lighter);
+}
+
+.tag {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.tagValue {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.tagPremium {
+  background: var(--aura-lavender-light);
+  color: var(--aura-purple);
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--aura-near-black);
+  margin-bottom: var(--space-1);
+}
+
+.price span {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--aura-gray-500);
+  font-family: var(--font-body);
+}
+
+.layout {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--aura-gray-700);
+  margin-bottom: var(--space-2);
+}
+
+.building {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.78rem;
+  color: var(--aura-gray-500);
+  margin-bottom: var(--space-3);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  font-size: 0.72rem;
+  color: var(--aura-gray-500);
+}
+
+.meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.concession {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.term {
+  font-size: 0.72rem;
+  color: var(--aura-gray-400);
+  margin-top: var(--space-2);
+}
+
+.unit {
+  font-size: 0.7rem;
+  color: var(--aura-gray-400);
+  margin-top: var(--space-1);
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  .card {
+    padding: var(--space-4);
+  }
+}

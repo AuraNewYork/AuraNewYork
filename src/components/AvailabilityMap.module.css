@@ -1,0 +1,53 @@
+.mapWrap {
+  height: 600px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--aura-gray-200);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-body);
+  min-width: 160px;
+}
+
+.popup strong {
+  font-size: 0.9rem;
+}
+
+.popHood {
+  font-size: 0.75rem;
+  color: var(--aura-gray-500);
+}
+
+.popUnits {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 4px;
+  font-size: 0.78rem;
+}
+
+.popPrice {
+  font-weight: 600;
+  color: var(--aura-purple);
+}
+
+.popNone {
+  font-size: 0.75rem;
+  color: var(--aura-gray-400);
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .mapWrap {
+    height: 450px;
+  }
+}

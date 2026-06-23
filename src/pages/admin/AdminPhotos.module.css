@@ -1,0 +1,118 @@
+.title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-6);
+  color: var(--aura-near-black);
+}
+
+.controls {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.select {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  background: var(--aura-white);
+  outline: none;
+}
+
+.select:focus {
+  border-color: var(--aura-purple);
+}
+
+.addForm {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 200px;
+  padding: var(--space-3);
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--aura-purple);
+}
+
+.inputSmall {
+  width: 120px;
+  padding: var(--space-3);
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.addBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--aura-purple);
+  color: var(--aura-white);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.addBtn:disabled {
+  opacity: 0.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--aura-gray-500);
+  padding: var(--space-8);
+}
+
+.photoCard {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--aura-gray-200);
+  background: var(--aura-white);
+}
+
+.photoCard img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.photoInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.75rem;
+  color: var(--aura-gray-500);
+}
+
+.deleteBtn {
+  color: var(--aura-gray-400);
+  padding: var(--space-1);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.deleteBtn:hover {
+  color: #dc2626;
+  background: #fef2f2;
+}

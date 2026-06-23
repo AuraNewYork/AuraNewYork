@@ -1,0 +1,128 @@
+.footer {
+  background: var(--aura-near-black);
+  color: var(--aura-gray-300);
+  padding: var(--space-16) 0 var(--space-8);
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-12);
+  margin-bottom: var(--space-12);
+}
+
+.brand {
+  max-width: 320px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--aura-white);
+}
+
+.logoDivider {
+  width: 1px;
+  height: 16px;
+  background: var(--aura-gray-600);
+}
+
+.logoSub {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--aura-gray-400);
+}
+
+.tagline {
+  font-size: 0.875rem;
+  color: var(--aura-gray-500);
+}
+
+.links {
+  display: flex;
+  gap: var(--space-16);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.col a, .col p {
+  font-size: 0.875rem;
+  color: var(--aura-gray-400);
+  transition: color var(--transition-fast);
+  line-height: 1.5;
+}
+
+.col a:hover {
+  color: var(--aura-white);
+}
+
+.colTitle {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--aura-gray-500);
+  margin-bottom: var(--space-2);
+}
+
+.bottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-6) 0;
+  border-top: 1px solid var(--aura-gray-700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom p {
+  font-size: 0.8rem;
+  color: var(--aura-gray-600);
+}
+
+.teamLogin {
+  font-size: 0.8rem;
+  color: var(--aura-gray-600);
+  transition: color var(--transition-fast);
+}
+
+.teamLogin:hover {
+  color: var(--aura-purple-lighter);
+}
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .links {
+    gap: var(--space-8);
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: var(--space-3);
+    text-align: center;
+  }
+}

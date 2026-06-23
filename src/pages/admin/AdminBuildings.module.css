@@ -1,0 +1,170 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--aura-near-black);
+}
+
+.addBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--aura-purple);
+  color: var(--aura-white);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.addBtn:hover {
+  background: var(--aura-purple-light);
+}
+
+.editor {
+  background: var(--aura-white);
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.editorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-5);
+}
+
+.editorHeader h2 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.closeBtn {
+  color: var(--aura-gray-500);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--aura-gray-600);
+}
+
+.field input, .field select, .field textarea {
+  padding: var(--space-3);
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.field input:focus, .field select:focus, .field textarea:focus {
+  border-color: var(--aura-purple);
+}
+
+.saveBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  padding: var(--space-3) var(--space-5);
+  background: var(--aura-purple);
+  color: var(--aura-white);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.table {
+  background: var(--aura-white);
+  border: 1px solid var(--aura-gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.tableHeader, .tableRow {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.5fr 0.5fr;
+  padding: var(--space-3) var(--space-4);
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.tableHeader {
+  background: var(--aura-gray-100);
+  font-weight: 600;
+  color: var(--aura-gray-600);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+}
+
+.tableRow {
+  border-top: 1px solid var(--aura-gray-100);
+}
+
+.tableRow:hover {
+  background: var(--aura-lavender-light);
+}
+
+.buildingName {
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.editBtn, .deleteBtn {
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.editBtn {
+  color: var(--aura-gray-500);
+}
+
+.editBtn:hover {
+  color: var(--aura-purple);
+  background: var(--aura-lavender-light);
+}
+
+.deleteBtn {
+  color: var(--aura-gray-500);
+}
+
+.deleteBtn:hover {
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tableHeader, .tableRow {
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }
+}

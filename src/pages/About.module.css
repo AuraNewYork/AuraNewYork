@@ -1,0 +1,151 @@
+.page {
+  padding-top: 80px;
+  min-height: 100vh;
+  padding-bottom: var(--space-16);
+}
+
+.header {
+  padding: var(--space-10) 0 var(--space-8);
+  border-bottom: 1px solid var(--aura-gray-200);
+  margin-bottom: var(--space-12);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--aura-gray-500);
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+  margin-bottom: var(--space-16);
+}
+
+.storyText h2 {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-6);
+}
+
+.storyText p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--aura-gray-600);
+  margin-bottom: var(--space-4);
+}
+
+.storyImg {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.storyImg img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.values {
+  margin-bottom: var(--space-16);
+}
+
+.values h2 {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+.value {
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+  background: var(--aura-gray-100);
+  border-radius: var(--radius-lg);
+}
+
+.value h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-3);
+  color: var(--aura-purple);
+}
+
+.value p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--aura-gray-600);
+}
+
+.team {
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-3);
+}
+
+.teamSub {
+  color: var(--aura-gray-500);
+  margin-bottom: var(--space-8);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.member {
+  text-align: center;
+}
+
+.memberImg {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto var(--space-4);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.memberImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin-bottom: var(--space-1);
+}
+
+.member span {
+  font-size: 0.8rem;
+  color: var(--aura-gray-500);
+}
+
+@media (max-width: 768px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+
+  .storyImg {
+    order: -1;
+  }
+
+  .valueGrid, .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}
